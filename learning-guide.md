@@ -1,74 +1,85 @@
 # 🐍 Python Learning Guide
 
-A beginner-to-intermediate guide built from the code examples in this repository.
+Work through the files **in order** — each one builds on the last.
 
 ---
 
 ## Table of Contents
 
-1. [Output & Print](#1-output--print)
-2. [Variables](#2-variables)
-3. [Data Types](#3-data-types)
-4. [Operators](#4-operators)
-5. [User Input](#5-user-input)
-6. [Conditional Statements](#6-conditional-statements)
-7. [Looping Statements](#7-looping-statements)
-8. [Functions](#8-functions)
-9. [Data Structures](#9-data-structures)
-10. [Exception Handling](#10-exception-handling)
-11. [Modules](#11-modules)
-12. [Mini Projects](#12-mini-projects)
+1. [Hello World](#1-hello-world) — `01_hello_world.py`
+2. [Output & Print](#2-output--print) — `02_output.py`
+3. [Variables](#3-variables) — `03_variables.py`
+4. [Data Types](#4-data-types) — `04_datatypes.py`
+5. [Operators](#5-operators) — `05_operators.py`
+6. [User Input](#6-user-input) — `06_user_input.py`
+7. [Conditional Statements](#7-conditional-statements) — `07_conditional_statements.py`
+8. [Looping Statements](#8-looping-statements) — `08_looping_statements.py`
+9. [Functions](#9-functions) — `09_functions.py`
+10. [Data Structures](#10-data-structures) — `10_data_structures.py`
+11. [Exception Handling](#11-exception-handling) — `11_exception_handling.py`
+12. [Modules](#12-modules) — `12_modules.py`
+13. [Mini Projects](#13-mini-projects) — `13_mini_projects.py`
 
 ---
 
-## 1. Output & Print
+## 1. Hello World
 
-> **File:** `output.py`, `script.py`
+> **File:** `01_hello_world.py`
 
-The `print()` function is how Python communicates back to you.
+Your very first Python program — print text, store a variable, and write a simple condition.
 
 ```python
-print("Hello World")              # Basic string
-print(1)                          # Integer
-print(5 + 3)                      # Expression result → 8
-print("Hi I am Dennis, I am ", 55, "Years Old")  # Multiple values
+print("Hello World")
+print("This is my first program")
+
+a = 10
+name = "Jacob Dennis"
+
+# Simple if condition
+if 10 > 5:
+    print("10 is greater than 5!")
 ```
 
-### `end` parameter
+---
 
-By default, `print()` adds a newline. Use `end` to change it:
+## 2. Output & Print
+
+> **File:** `02_output.py`
+
+The `print()` function is how Python talks back to you.
 
 ```python
-print("Lorem Ipsum Ist", end=" ")
+print("Lorem Ipsum Ist", end=" ")   # end keeps it on the same line
 print(" Um Lorem")
-# Output: Lorem Ipsum Ist  Um Lorem
+
+print(1)        # Integer
+print(5 + 3)    # Expression → 8
+print("Hi I am Dennis, I am ", 55, "Years Old")   # Multiple values
 ```
 
 ---
 
-## 2. Variables
+## 3. Variables
 
-> **File:** `variables.py`
+> **File:** `03_variables.py`
 
 A **variable** is a named container for storing data.
 
 ### Naming Rules
 
-| ✅ Allowed               | ❌ Not Allowed                     |
-| ------------------------ | ---------------------------------- |
-| `myage = 35`             | `1myage = 35` (starts with number) |
-| `my_age = 35`            | `my-var = 35` (hyphen not allowed) |
-| `_my_age = 35`           | `my var = 35` (spaces not allowed) |
-| `myAge = 35` (camelCase) |                                    |
-| `MYAGE = 35` (UPPERCASE) |                                    |
+| ✅ Allowed    | ❌ Not Allowed                     |
+| ------------- | ---------------------------------- |
+| `my_age = 35` | `1myage = 35` (starts with number) |
+| `myAge = 35`  | `my-var = 35` (hyphen)             |
+| `MYAGE = 35`  | `my var = 35` (space)              |
 
 ### Multiple Assignment
 
 ```python
-# Different values
+# Different values in one line
 a, b, c = "Dennis", "Manjunath", "Sneha"
 
-# Same value
+# Same value for multiple variables
 d = e = f = "Dennis"
 ```
 
@@ -87,17 +98,14 @@ print("My Height is", height, "feet")
 
 ---
 
-## 3. Data Types
+## 4. Data Types
 
-> **File:** `datatypes.py`
-
-Python has several built-in data types:
+> **File:** `04_datatypes.py`
 
 ### Strings
 
 ```python
 message = "Hey Bro Wassup"
-name = 'Python'
 
 # Multi-line string
 poem = """
@@ -107,147 +115,123 @@ Python is awesome,
 Well so are you!
 """
 
-# Operations
+# Concatenation & repetition
 first_name = "jacob"
-last_name = "dennis"
-fullname = first_name + " " + last_name   # Concatenation
-print(fullname.upper())                    # → JACOB DENNIS
-line = "*" * len(fullname)                 # Repetition
-print(fullname[6])                         # Indexing → d
+last_name  = "dennis"
+fullname   = first_name + " " + last_name
+print(fullname.upper())          # → JACOB DENNIS
+print("*" * len(fullname))       # Repeating character
+print(fullname[6])               # Indexing → d
 ```
 
 ### Integers
 
 ```python
-a = 10
-b = 20
-
-print(a + b)    # Addition       → 30
-print(a - b)    # Subtraction    → -10
-print(a * b)    # Multiplication → 200
-print(a / b)    # Division       → 0.5
-print(a // b)   # Floor Division → 0
-print(a % b)    # Modulus        → 10
-print(a ** b)   # Exponent       → 100000000000000000000
+a, b = 10, 20
+print(a + b)    # 30
+print(a - b)    # -10
+print(a * b)    # 200
+print(a / b)    # 0.5  (float result)
+print(a // b)   # 0    (floor division)
+print(a % b)    # 10   (remainder)
+print(a ** b)   # 10^20
 ```
 
 ### Floats
 
 ```python
 price = 20.99
-PI = 3.14285
-temp = 99.8
-
 total = price * 1.5
-print(total)                       # → 31.485
+print(total)                       # 31.485
 
-# Floating point precision
-print(0.1 + 0.345)                 # → 0.44500000000000006
-print(round(0.1 + 0.345, 5))      # → 0.445
+# Floating-point precision fix
+print(round(0.1 + 0.345, 5))      # 0.445
 ```
 
 ### Booleans
 
 ```python
-is_raining = False
-is_holiday = False
 age = 10
-
-is_adult = age >= 18              # Evaluates to False
+is_adult = age >= 18    # Evaluates to False
 ```
 
 ---
 
-## 4. Operators
+## 5. Operators
 
-> **File:** `operators.py`
+> **File:** `05_operators.py`
 
-### Arithmetic Operators
+### Arithmetic
 
-| Operator | Operation      | Example  |
-| -------- | -------------- | -------- |
-| `+`      | Addition       | `a + b`  |
-| `-`      | Subtraction    | `a - b`  |
-| `*`      | Multiplication | `a * b`  |
-| `/`      | Division       | `a / b`  |
-| `//`     | Floor Division | `a // b` |
-| `%`      | Modulus        | `a % b`  |
-| `**`     | Exponentiation | `a ** b` |
+| `+` | `-` | `*` | `/` | `//`      | `%`     | `**`     |
+| --- | --- | --- | --- | --------- | ------- | -------- |
+| Add | Sub | Mul | Div | Floor Div | Modulus | Exponent |
 
-### Comparison Operators
+### Comparison
 
-| Operator | Meaning               | Example  |
-| -------- | --------------------- | -------- |
-| `==`     | Equal to              | `x == y` |
-| `!=`     | Not equal to          | `x != y` |
-| `>`      | Greater than          | `x > y`  |
-| `<`      | Less than             | `x < y`  |
-| `>=`     | Greater than or equal | `x >= y` |
-| `<=`     | Less than or equal    | `x <= y` |
+| `==`  | `!=`      | `>`     | `<`  | `>=` | `<=` |
+| ----- | --------- | ------- | ---- | ---- | ---- |
+| Equal | Not equal | Greater | Less | ≥    | ≤    |
 
-### Logical Operators
+### Logical
 
-| Operator | Description                                |
-| -------- | ------------------------------------------ |
-| `and`    | True if **both** conditions are True       |
-| `or`     | True if **at least one** condition is True |
-| `not`    | Reverses the boolean value                 |
+| `and`     | `or`              | `not`  |
+| --------- | ----------------- | ------ |
+| Both True | At least one True | Invert |
 
-### Assignment Operators
+### Assignment Shortcuts
 
 ```python
 a = 120
-a += 1    # a = a + 1
-a -= 1    # a = a - 1
-a *= 2    # a = a * 2
-a /= 2    # a = a / 2
+a += 1    # a = 121
+a -= 1    # a = 120
+a *= 2    # a = 240
+a /= 2    # a = 120.0
 ```
 
-### PEMDAS (Order of Operations)
+### PEMDAS — Order of Operations
 
-**P**arentheses → **E**xponents → **M**ultiply/**D**ivide → **A**dd/**S**ubtract
+**P**arentheses → **E**xponents → **M**ul/**D**iv → **A**dd/**S**ub
 
 ```python
-result = (2 + 3) * 4   # → 20  (not 14!)
+result = (2 + 3) * 4   # → 20, not 14
 ```
 
 ---
 
-## 5. User Input
+## 6. User Input
 
-> **File:** `user-input.py`
+> **File:** `06_user_input.py`
 
-The `input()` function reads text from the user. It **always returns a string**, so convert to the needed type.
+`input()` always returns a **string** — cast it when you need a number.
 
 ```python
-age_str = input("What's your age?")   # Returns a string
-age = int(age_str)                     # Convert to integer
+age_str = input("What's your age? ")
+age = int(age_str)       # Convert string → integer
 print(age + 1)
 ```
 
-> ⚠️ **Tip:** Always cast `input()` when you need a number — doing math on a string will cause a `TypeError`.
+> ⚠️ Forgetting `int()` will cause a `TypeError` when doing maths.
 
 ---
 
-## 6. Conditional Statements
+## 7. Conditional Statements
 
-> **File:** `conditional-statements.py`
+> **File:** `07_conditional_statements.py`
 
 ### if / else
 
 ```python
-password = "secret@123"
 if password == "secret@123":
     print("Access Granted")
 else:
     print("Access Denied")
 ```
 
-### if / elif / else (Grade Example)
+### if / elif / else
 
 ```python
 score = 85
-
 if score >= 90:
     grade = 'A'
 elif score >= 80:
@@ -258,61 +242,55 @@ elif score >= 60:
     grade = 'D'
 else:
     grade = 'F'
-
-print("Your Grade is:", grade)   # → B
+print("Grade:", grade)   # B
 ```
 
-### Nested if / else
+### Nested if
 
 ```python
 age = 25
 has_license = False
-
 if age >= 18:
-    print("You are old enough to drive")
+    print("Old enough to drive")
     if has_license:
-        print("You can Drive!")
+        print("You can drive!")
     else:
-        print("But you need a License")
+        print("Get a licence first")
 else:
-    print("Too Young to drive")
+    print("Too young to drive")
 ```
 
-### Using `and` / `or` / `not`
+### and / or / not
 
 ```python
-# AND - both must be True
-age = 20
-has_ticket = False
+# and — both must be True
 if age >= 18 and has_ticket:
-    print("You can enter the concert")
+    print("Enter the concert")
 
-# OR - at least one must be True
-day = "monday"
+# or — at least one must be True
 if day == "saturday" or day == "sunday":
-    print("It's the Weekend!")
+    print("Weekend!")
 
-# NOT - inverts the condition
-is_sunny = True
+# not — inverts condition
 if not is_sunny:
     print("Take an umbrella")
 ```
 
-### Ternary Operator (One-liner)
+### Ternary (one-liner)
 
 ```python
 age = 21
 status = "adult" if age >= 18 else "minor"
-print(status)   # → adult
+print(status)   # adult
 ```
 
 ---
 
-## 7. Looping Statements
+## 8. Looping Statements
 
-> **File:** `looping-statements.py`
+> **File:** `08_looping_statements.py`
 
-### while Loop
+### while loop
 
 ```python
 count = 0
@@ -322,28 +300,27 @@ while count <= 10:
 print("Done!")
 ```
 
-### for Loop with `range()`
+### for loop with `range()`
 
 ```python
-for count in range(0, 10):
-    print(count)   # Prints 0 through 9
+for i in range(0, 10):
+    print(i)      # 0 → 9
 ```
 
-### Nested Loops (Star Pattern)
+### Nested loops — Star Pattern
 
 ```python
 for row in range(1, 5):
     for col in range(row):
         print("*", end="")
     print()
-# Output:
 # *
 # **
 # ***
 # ****
 ```
 
-### Loop with `break` (Search Example)
+### break / else on a loop
 
 ```python
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -351,185 +328,154 @@ search_for = 5
 
 for num in numbers:
     if num == search_for:
-        print("Found it")
+        print("Found it!")
         break
 else:
     print("Not found")
+# The else only runs if break was never hit
 ```
-
-> 💡 The `else` block on a `for` loop runs only if the loop was **not** broken out of early.
 
 ---
 
-## 8. Functions
+## 9. Functions
 
-> **File:** `functions.py`
+> **File:** `09_functions.py`
 
-Functions let you write reusable blocks of code.
+Functions let you write **reusable** blocks of code.
 
-### Basic Function
+### Basic function
 
 ```python
-def iAmGroot():
+def greet():
     print("I am Groot")
 
-for i in range(0, 10):
-    iAmGroot()
+greet()    # Call it any number of times
 ```
 
-### Function with Parameters & Return
+### With parameters & return
 
 ```python
-def greet_someone(name):
-    print(f"Hello, {name}!")
-    print("Welcome to My Python Script")
+def greet(name):
+    print(f"Hello, {name}! Welcome to Python.")
 
-name = input("Please enter your name to Continue:")
-greet_someone(name)
+greet("Dennis")
 ```
 
-### `*args` — Variable Positional Arguments
+### \*args — any number of positional arguments
 
 ```python
-def sum_all(*args):
+def add_all(*args):
     result = 0
     for num in args:
         result += num
     return result
 
-print(sum_all(1, 2, 3, 4, 5))   # → 15
+print(add_all(1, 2, 3, 4, 5))   # 15
 ```
 
-### `**kwargs` — Variable Keyword Arguments
+### \*\*kwargs — keyword arguments
 
 ```python
 def display_info(**kwargs):
     for key, value in kwargs.items():
         print(f"{key}: {value}")
 
-display_info(name="Dennis", age=20, sex="Male", married=False)
-# Output:
-# name: Dennis
-# age: 20
-# sex: Male
-# married: False
+display_info(name="Dennis", age=20, married=False)
 ```
 
-### Function Types Summary
+### Function Types at a Glance
 
-| Type                        | Has Parameters? | Has Return? |
-| --------------------------- | --------------- | ----------- |
-| `def greet()`               | ❌              | ❌          |
-| `def greet(name)`           | ✅              | ❌          |
-| `def add(a, b): return a+b` | ✅              | ✅          |
-| `def get_pi(): return 3.14` | ❌              | ✅          |
+| Has params? | Has return? | Example                    |
+| ----------- | ----------- | -------------------------- |
+| ❌          | ❌          | `def greet():`             |
+| ✅          | ❌          | `def greet(name):`         |
+| ✅          | ✅          | `def add(a,b): return a+b` |
+| ❌          | ✅          | `def pi(): return 3.14`    |
 
 ---
 
-## 9. Data Structures
+## 10. Data Structures
 
-> **File:** `data-structures.py`
+> **File:** `10_data_structures.py`
 
-### Lists — Ordered, Mutable, Allows Duplicates
+### List — ordered, mutable, allows duplicates
 
 ```python
 students = ["Dennis", "Manjunath", "Kavya", "Sneha"]
-numbers = [1, 2, 3, 4, 4, 5]
-mixed = [1, "Dennis", 25.4, True]
+numbers  = [1, 2, 3, 4, 4, 5]
 
-# Common operations
-students[1] = "Arun"           # Update item
-students.pop()                 # Remove last item
-print(len(students))           # Length
-print(sum(numbers))            # Sum
-print(min(numbers))            # Min
-print(max(numbers))            # Max
-print(numbers.count(4))        # Count occurrences of 4
-print(students.index("Arun"))  # Find index
-students.sort()                # Sort alphabetically
-numbers.reverse()              # Reverse order
-print("Dennis" in students)    # Membership check → True
+students[1] = "Arun"              # Update
+students.pop()                    # Remove last
+print(len(students))              # Length
+print(sum(numbers))               # Sum
+print(min(numbers), max(numbers)) # Min / Max
+print(numbers.count(4))           # Count occurrences
+students.sort()                   # Sort
+numbers.reverse()                 # Reverse
+print("Dennis" in students)       # Membership → True
 
-# Looping
-for name in students:
-    print(name)
-
-# With index using enumerate()
+# Loop with index
 for i, name in enumerate(students):
     print(f"{i}: {name}")
 
-# List Comprehension
+# List comprehension
 squares = [i ** 2 for i in range(1, 6)]
-print(squares)   # → [1, 4, 9, 16, 25]
+print(squares)   # [1, 4, 9, 16, 25]
 ```
 
-### Tuples — Ordered, **Immutable**
+### Tuple — ordered, **immutable**
 
 ```python
-coordinates = (10, 20)
 person = ("kavya", 25, "Chitradurga")
-
-print(person[2])           # Indexing → Chitradurga
-
-# Tuple unpacking
-name, age, district = person
-print(f"I am {name}, from {district}. I am {age} years old")
+name, age, district = person       # Unpack
+print(f"{name} is from {district}")
 ```
 
-> 💡 Use tuples when data **should not change** (e.g., coordinates, RGB colors).
+> 💡 Use tuples when data must **not** change (e.g., coordinates, RGB colours).
 
-### Dictionaries — Key-Value Pairs, Ordered (Python 3.7+)
+### Dictionary — key-value pairs
 
 ```python
 student = {
     "name": "Dennis",
-    "age": 25,
-    "grade": "A",
-    "courses": ["Math", "Science", "Social Science"]
+    "age":  25,
+    "courses": ["Math", "Science"]
 }
 
-# Access
 print(student["name"])
-print(student.get("phone", "Not found"))   # Safe access with default
+student["phone"] = "8908908900"          # Add key
+student["age"] = 26                      # Update
+student.pop("courses")                   # Delete
 
-# Add / Update
-student["phone"] = "8908908900"
-student["age"] = 26
-
-# Delete
-student.pop("grade")
-
-# Loop
 for key, value in student.items():
     print(f"{key}: {value}")
 ```
 
-### Sets — Unordered, **No Duplicates**
+### Set — unordered, **no duplicates**
 
 ```python
-numbers = [1, 2, 3, 1, 3, 4, 3, 6, 7, 888, 9, 2, 4, 5, 5, 5]
-unique_numbers = set(numbers)
-print(unique_numbers)   # All duplicates removed
-
-unique_numbers.discard(999)   # Remove safely (no error if not found)
+numbers = [1, 2, 3, 1, 3, 4, 5, 5, 5]
+unique  = set(numbers)
+print(unique)                  # {1, 2, 3, 4, 5}
+unique.discard(999)            # Safe remove (no error)
 ```
 
 ### Quick Comparison
 
-| Feature    | List  | Tuple | Dictionary | Set |
-| ---------- | ----- | ----- | ---------- | --- |
-| Ordered    | ✅    | ✅    | ✅         | ❌  |
-| Mutable    | ✅    | ❌    | ✅         | ✅  |
-| Duplicates | ✅    | ✅    | Keys: ❌   | ❌  |
-| Access by  | Index | Index | Key        | —   |
+|            | List  | Tuple | Dict    | Set |
+| ---------- | ----- | ----- | ------- | --- |
+| Ordered    | ✅    | ✅    | ✅      | ❌  |
+| Mutable    | ✅    | ❌    | ✅      | ✅  |
+| Duplicates | ✅    | ✅    | Keys ❌ | ❌  |
+| Access     | Index | Index | Key     | —   |
 
 ---
 
-## 10. Exception Handling
+## 11. Exception Handling
 
-> **File:** `exceptionhandling.py`
+> **File:** `11_exception_handling.py`
 
-Exceptions prevent your program from crashing on bad input.
+Stop your program from crashing on bad input.
 
 ### try / except
 
@@ -539,63 +485,65 @@ try:
     result = 100 / number
     print(result)
 except ValueError:
-    print("That is not a number, please enter a valid number")
+    print("That is not a number!")
 except ZeroDivisionError:
-    print("You cannot divide by zero")
+    print("Cannot divide by zero!")
 except Exception as e:
-    print(f"An error occurred: {e}")
+    print(f"Unexpected error: {e}")
 ```
 
-### Raising Your Own Exceptions
+### Raising your own exceptions
 
 ```python
 def validate_age(age):
     if age < 0:
         raise ValueError("Age cannot be negative")
     if age > 200:
-        raise ValueError("Invalid Age")
+        raise ValueError("Invalid age")
     return age
 
 try:
     validate_age(-10)
 except ValueError as e:
-    print(e)   # → Age cannot be negative
+    print(e)    # Age cannot be negative
 ```
 
 ---
 
-## 11. Modules
+## 12. Modules
 
-> **File:** `modules.py`
+> **File:** `12_modules.py`
 
-Modules are pre-built libraries you can import to add functionality.
+Modules are ready-made libraries — `import` them to extend Python.
 
 ```python
 import datetime
 import os
 
-print(datetime.datetime.now())   # Current date and time
+print(datetime.datetime.now())   # Current date & time
 print(os.getcwd())               # Current working directory
 ```
 
-### Common Built-in Modules
+### Handy Built-in Modules
 
-| Module     | Use Case                |
-| ---------- | ----------------------- |
-| `datetime` | Dates and times         |
-| `os`       | File system and paths   |
-| `math`     | Mathematical functions  |
-| `random`   | Random numbers          |
-| `json`     | JSON encoding/decoding  |
-| `sys`      | System-level operations |
+| Module     | Use                    |
+| ---------- | ---------------------- |
+| `datetime` | Dates and times        |
+| `os`       | Files & paths          |
+| `math`     | sqrt, ceil, floor, pi… |
+| `random`   | Random numbers         |
+| `json`     | Read/write JSON        |
+| `sys`      | System operations      |
 
 ---
 
-## 12. Mini Projects
+## 13. Mini Projects
 
-### ASCII Art Bot
+> **File:** `13_mini_projects.py`
 
-> **File:** `acsii-art.py`
+Put everything together with two small projects.
+
+### Project 1 — ASCII Art Bot
 
 ```python
 print("  ********  ")
@@ -603,51 +551,44 @@ print(" *        * ")
 print("*  ^    ^  *")
 print("*     >    *")
 print("*  \\____/  *")
-print("*          *")
 print(" ********** ")
-print("Hi Welcome to a Bot I just smile")
+print("Hi! Welcome — I just smile :)")
 ```
 
-### Simple Calculator Starter
-
-> **File:** `calculator.py`
-
-A placeholder — here's a fully working extension:
+### Project 2 — Simple Calculator
 
 ```python
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
-op = input("Enter operator (+, -, *, /): ")
+a  = float(input("First number : "))
+b  = float(input("Second number: "))
+op = input("Operator (+  -  *  /): ")
 
-if op == "+":
-    print(a + b)
-elif op == "-":
-    print(a - b)
-elif op == "*":
-    print(a * b)
+if op == "+":   print("Result:", a + b)
+elif op == "-": print("Result:", a - b)
+elif op == "*": print("Result:", a * b)
 elif op == "/":
-    if b != 0:
-        print(a / b)
-    else:
-        print("Cannot divide by zero!")
+    print("Result:", a / b) if b != 0 else print("Cannot divide by zero!")
 else:
     print("Invalid operator")
 ```
 
 ---
 
-## 🗺️ Suggested Learning Path
+## 🗺️ Learning Path
 
 ```
-output.py  →  variables.py  →  datatypes.py  →  operators.py
-     ↓
-user-input.py  →  conditional-statements.py  →  looping-statements.py
-     ↓
-functions.py  →  data-structures.py  →  exceptionhandling.py  →  modules.py
-     ↓
-       acsii-art.py / calculator.py  (mini projects!)
+01_hello_world.py
+      ↓
+02_output.py  →  03_variables.py  →  04_datatypes.py  →  05_operators.py
+      ↓
+06_user_input.py  →  07_conditional_statements.py  →  08_looping_statements.py
+      ↓
+09_functions.py  →  10_data_structures.py
+      ↓
+11_exception_handling.py  →  12_modules.py
+      ↓
+13_mini_projects.py  🎉
 ```
 
 ---
 
-_Generated from the [`sample-ai-repository`](https://github.com/TheClairvoyantBeing/sample-ai-repository) Python learning files._
+_Part of the [`sample-ai-repository`](https://github.com/TheClairvoyantBeing/sample-ai-repository) Python learning series._
