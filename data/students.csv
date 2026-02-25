@@ -1,0 +1,16 @@
+id,name,age,grade,gpa,city,email,phone,enrolled_year,major
+1,Dennis Patel,25,A,3.92,Bangalore,dennis.patel@example.com,9876543210,2021,Computer Science
+2,Priya Sharma,22,B+,3.45,Chennai,priya.sharma@example.com,9123456780,2022,Data Science
+3,Jerome D'Souza,23,A+,4.00,Mumbai,jerome.dsouza@example.com,9988776655,2021,Artificial Intelligence
+4,Kavya Nair,24,B,3.10,Mysore,kavya.nair@example.com,8877665544,2020,Mathematics
+5,Arjun Menon,21,A,3.78,Kochi,arjun.menon@example.com,9345678901,2023,Computer Science
+6,Sneha Reddy,26,C+,2.85,Hyderabad,sneha.reddy@example.com,9012345678,2020,Physics
+7,Rahul Verma,20,B+,3.50,Delhi,rahul.verma@example.com,8901234567,2023,Electronics
+8,Anjali Singh,22,A-,3.65,Pune,anjali.singh@example.com,7890123456,2022,Computer Science
+9,Kiran Kumar,27,B,3.20,Mangalore,kiran.kumar@example.com,6789012345,2019,Civil Engineering
+10,Meera Iyer,23,A,3.88,Coimbatore,meera.iyer@example.com,9654321087,2021,Data Science
+11,Rohit Bhat,24,C,2.60,Udupi,rohit.bhat@example.com,8543210976,2020,Mechanical Engineering
+12,Divya Pillai,21,A+,3.95,Trivandrum,divya.pillai@example.com,7432109865,2023,Computer Science
+13,Aditya Rao,25,B-,3.05,Belgaum,aditya.rao@example.com,9321098754,2021,Information Technology
+14,Pooja Kulkarni,22,A,3.72,Nashik,pooja.kulkarni@example.com,8210987643,2022,Computer Science
+15,Suresh Gowda,29,B+,3.40,Hubli,suresh.gowda@example.com,9109876532,2018,Civil Engineering

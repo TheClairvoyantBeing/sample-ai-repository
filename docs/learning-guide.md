@@ -19,6 +19,8 @@ Work through the files **in order** — each one builds on the last.
 11. [Exception Handling](#11-exception-handling) — `11_exception_handling.py`
 12. [Modules](#12-modules) — `12_modules.py`
 13. [Mini Projects](#13-mini-projects) — `13_mini_projects.py`
+14. [File I/O](#14-file-io) — `14_file_io.py`
+15. [CSV Operations](#15-csv-operations) — `15_csv_operations.py`
 
 ---
 
@@ -573,6 +575,87 @@ else:
 
 ---
 
+## 14. File I/O
+
+> **File:** `14_file_io.py` | **Data file:** `test.txt`, `output.txt`
+
+Read from and write to files on disk.
+
+```python
+# Read entire file (recommended: use 'with' so it auto-closes)
+with open("test.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+# Read line by line
+with open("test.txt", "r") as file:
+    for line in file.readlines():
+        print(line.strip())
+
+# Write (overwrites) / Append
+with open("output.txt", "w") as file:
+    file.write("Hello World\n")
+
+with open("output.txt", "a") as file:
+    file.write("Appended line\n")
+
+# Always handle errors
+try:
+    with open("test.txt", "r") as file:
+        print(file.read())
+except FileNotFoundError:
+    print("File Not Found")
+except PermissionError:
+    print("Permission denied")
+except Exception as e:
+    print(f"Error: {e}")
+```
+
+### File Mode Quick Reference
+
+| Mode  | Action                   |
+| ----- | ------------------------ |
+| `"r"` | Read (error if missing)  |
+| `"w"` | Write, overwrite         |
+| `"a"` | Append                   |
+| `"x"` | Create (error if exists) |
+
+---
+
+## 15. CSV Operations
+
+> **File:** `15_csv_operations.py` | **Data files:** `students.csv`, `new_student.csv`, `db.csv`
+
+CSV (Comma-Separated Values) is the most common format for tabular data.
+
+```python
+import csv
+
+# Write CSV using the csv module (handles commas in data cleanly)
+students = [
+    ["name", "age", "grade"],
+    ["Dennis", 30, "A"],
+    ["Jerome", 23, "B"],
+]
+
+with open("new_student.csv", "w", newline='') as file:
+    writer = csv.writer(file)
+    writer.writerows(students)
+
+# Read CSV
+with open("new_student.csv", "r") as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(row)
+# ['name', 'age', 'grade']
+# ['Dennis', '30', 'A']
+# ['Jerome', '23', 'B']
+```
+
+> ⚠️ Always use `newline=''` when writing CSVs on Windows — without it you get blank rows.
+
+---
+
 ## 🗺️ Learning Path
 
 ```
@@ -586,7 +669,9 @@ else:
       ↓
 11_exception_handling.py  →  12_modules.py
       ↓
-13_mini_projects.py  🎉
+13_mini_projects.py
+      ↓
+14_file_io.py  →  15_csv_operations.py  🎉
 ```
 
 ---

@@ -1,0 +1,21 @@
+date,description,category,amount,type,account,balance_after
+2026-01-01,Opening Balance,,,credit,Savings,50000.00
+2026-01-03,Grocery Store - BigBazaar,Food & Groceries,1250.50,debit,Savings,48749.50
+2026-01-05,Netflix Subscription,Entertainment,649.00,debit,Savings,48100.50
+2026-01-07,Salary Credit,Income,55000.00,credit,Savings,103100.50
+2026-01-10,Electricity Bill,Utilities,1850.00,debit,Savings,101250.50
+2026-01-12,Online Shopping - Amazon,Shopping,3420.00,debit,Savings,97830.50
+2026-01-15,Gym Membership,Health,999.00,debit,Savings,96831.50
+2026-01-18,Restaurant - Dinner,Food & Groceries,780.00,debit,Savings,96051.50
+2026-01-20,ATM Withdrawal,Cash,5000.00,debit,Savings,91051.50
+2026-01-22,Freelance Payment,Income,12000.00,credit,Savings,103051.50
+2026-01-25,Mobile Recharge,Utilities,599.00,debit,Savings,102452.50
+2026-01-28,Book Purchase,Education,1499.00,debit,Savings,100953.50
+2026-02-01,Rent Payment,Housing,15000.00,debit,Savings,85953.50
+2026-02-03,Grocery Store - DMart,Food & Groceries,2100.00,debit,Savings,83853.50
+2026-02-05,Bus Pass Renewal,Transport,500.00,debit,Savings,83353.50
+2026-02-07,Salary Credit,Income,55000.00,credit,Savings,138353.50
+2026-02-10,Spotify Subscription,Entertainment,119.00,debit,Savings,138234.50
+2026-02-14,Valentine Dinner,Food & Groceries,1850.00,debit,Savings,136384.50
+2026-02-18,Online Course - Udemy,Education,499.00,debit,Savings,135885.50
+2026-02-20,Medical Checkup,Health,750.00,debit,Savings,135135.50

@@ -1,0 +1,37 @@
+The Python Programming Language — A Brief Overview
+
+Python is a high-level, interpreted, general-purpose programming language. It was created by Guido van Rossum and first released in 1991. Python's design philosophy emphasises code readability and simplicity, making it one of the most beginner-friendly languages while remaining powerful enough for professional use.
+
+== Why Python? ==
+
+Python has become one of the most popular programming languages in the world for several reasons. First, its syntax is clean and resembles plain English, which dramatically reduces the learning curve for new programmers. Second, Python supports multiple programming paradigms — procedural, object-oriented, and functional — giving developers flexibility in how they structure their code. Third, Python has an enormous ecosystem of libraries and frameworks covering everything from web development (Django, Flask) to data science (NumPy, Pandas) to artificial intelligence (TensorFlow, PyTorch).
+
+== Key Features ==
+
+Interpreted: Python code is executed line by line, which makes debugging easier and allows for rapid prototyping.
+Dynamically Typed: You don't need to declare variable types — Python figures it out at runtime.
+Garbage Collected: Memory management is handled automatically, so developers don't need to allocate or free memory manually.
+Cross-Platform: Python runs on Windows, macOS, and Linux without modification.
+Extensive Standard Library: The phrase "batteries included" describes Python's rich built-in library covering file I/O, networking, math, JSON, CSV, datetime, and much more.
+
+== Real-World Applications ==
+
+Python powers an astonishing range of applications:
+- Web backends (Instagram, Pinterest, Spotify)
+- Data analysis and visualisation (used by scientists worldwide)
+- Machine learning and AI (Google, Meta, OpenAI all use Python heavily)
+- Automation and scripting (DevOps, testing, web scraping)
+- Finance (algorithmic trading, risk analysis)
+- Education (the most widely taught first programming language globally)
+
+== Practice Exercises ==
+
+When you read this file in Python, try the following:
+1. Count how many lines are in this file.
+2. Find all lines that start with a capital letter.
+3. Count occurrences of the word "Python".
+4. Extract every line under "== Key Features ==" section.
+5. Write a cleaned version of this file (strip whitespace, remove blank lines).
+6. Count the total number of words in the file.
+7. Find the longest word in the file.
+8. Print every sentence that contains the word "language".

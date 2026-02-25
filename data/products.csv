@@ -1,0 +1,16 @@
+product_id,product_name,category,brand,price_inr,stock,rating,reviews,discount_percent,sku
+P001,Wireless Bluetooth Headphones,Electronics,SoundMax,2999,150,4.5,832,10,SKU-WBH-001
+P002,Mechanical Keyboard,Electronics,KeyPro,4599,80,4.7,421,5,SKU-MK-002
+P003,USB-C Hub 7-in-1,Electronics,TechLink,1899,200,4.3,615,0,SKU-UCH-003
+P004,Python Programming Book,Books,TechPress,599,500,4.8,1204,15,SKU-BK-004
+P005,Ergonomic Office Chair,Furniture,ComfortPlus,12999,35,4.6,289,8,SKU-EOC-005
+P006,27-inch 4K Monitor,Electronics,ViewMax,28999,20,4.4,176,12,SKU-MON-006
+P007,Laptop Stand Aluminium,Accessories,DeskPro,1299,320,4.2,940,0,SKU-LSA-007
+P008,Noise Cancelling Earbuds,Electronics,SoundMax,5499,95,4.6,723,20,SKU-NCE-008
+P009,Webcam 1080p HD,Electronics,ClearVision,2499,110,4.1,388,5,SKU-WC-009
+P010,Desk Lamp LED,Furniture,LightUp,899,450,4.0,256,0,SKU-DL-010
+P011,Portable SSD 1TB,Electronics,SpeedDrive,6999,60,4.7,512,10,SKU-SSD-011
+P012,Drawing Tablet,Electronics,ArtPad,8999,45,4.5,347,15,SKU-DT-012
+P013,Python Crash Course (Book),Books,NoStarch,749,300,4.9,2100,0,SKU-BK-013
+P014,Wireless Mouse,Electronics,ClickPro,1199,280,4.3,876,5,SKU-WM-014
+P015,Cable Management Kit,Accessories,NeatDesk,349,600,4.1,193,0,SKU-CMK-015

@@ -1,0 +1,13 @@
+user_id,username,full_name,email,phone,country,city,role,account_status,registration_date,last_login,ip_address
+U001,dennisp,Dennis Patel,dennis.patel@example.com,+91-9876543210,India,Bangalore,admin,active,2021-03-15,2026-02-24,192.168.1.10
+U002,priya_s,Priya Sharma,priya.sharma@example.com,+91-9123456780,India,Chennai,user,active,2022-07-01,2026-02-23,10.0.0.45
+U003,jerome_d,Jerome D'Souza,jerome.dsouza@example.com,+91-9988776655,India,Mumbai,moderator,active,2020-11-20,2026-02-22,172.16.0.5
+U004,kavya_n,Kavya Nair,kavya.nair@example.com,+91-8877665544,India,Mysore,user,inactive,2019-05-10,2025-10-01,10.10.0.77
+U005,arjun_m,Arjun Menon,arjun.menon@example.com,+91-9345678901,India,Kochi,user,active,2023-01-25,2026-02-25,192.168.2.30
+U006,sneha_r,Sneha Reddy,sneha.reddy@example.com,+91-9012345678,India,Hyderabad,user,suspended,2020-08-14,2025-12-15,10.0.1.99
+U007,rahul_v,Rahul Verma,rahul.verma@example.com,+91-8901234567,India,Delhi,user,active,2023-04-02,2026-02-20,172.16.1.12
+U008,anjali_s,Anjali Singh,anjali.singh@example.com,+91-7890123456,India,Pune,moderator,active,2022-09-18,2026-02-24,10.0.2.55
+U009,kiran_k,Kiran Kumar,kiran.kumar@example.com,+91-6789012345,India,Mangalore,user,inactive,2019-12-01,2024-06-30,192.168.3.88
+U010,meera_i,Meera Iyer,meera.iyer@example.com,+91-9654321087,India,Coimbatore,admin,active,2021-06-11,2026-02-25,10.0.3.101
+U011,rohit_b,Rohit Bhat,rohit.bhat@example.com,+91-8543210976,India,Udupi,user,active,2020-02-28,2026-02-19,172.16.2.44
+U012,divya_p,Divya Pillai,divya.pillai@example.com,+91-7432109865,India,Trivandrum,user,active,2023-07-07,2026-02-23,10.0.4.200
