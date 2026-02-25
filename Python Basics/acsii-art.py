@@ -1,0 +1,8 @@
+print("  ********  ")
+print(" *        * ")
+print("*  ^    ^  *")
+print("*     >    *")
+print("*  \\____/  *")
+print("*          *")
+print(" ********** ")
+print("Hi Welcome to a Bot I just smile")
