@@ -1,0 +1,15 @@
+# Dependencies for Weekly Reports evidence scripts
+
+# Data Science & Visualization
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+
+# Machine Learning
+scikit-learn>=1.2.0
+
+# API / Inference
+# Note: Week 6 demo simulated an API response, but if you extend it
+# to run a real Flask server or use requests:
+flask>=3.0.0
+requests>=2.31.0
