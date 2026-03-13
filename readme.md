@@ -1,18 +1,25 @@
-# 🐍 Python Basics — A Learn-by-Doing Repository
+# 🐍 Generative AI Engineering Program — Repository
 
-A step-by-step Python course. Each file is a self-contained lesson —
-open it, read the comments, run it, move on to the next.
+A comprehensive repository for the **Generative AI Engineering Program** by [Campuspe](https://campuspe.com). Contains Python lessons, data science modules, MCP tutorials, projects, and weekly task reports.
 
 ## 📁 Repository Structure
 
 ```
 sample-ai-repository/
-├── lessons/          ← 15 numbered lesson files (start here)
-├── data/             ← practice data files for lessons 14 & 15
-├── docs/             ← learning-guide.md (detailed reference)
+├── lessons/              ← 18 numbered Python lesson files (start here)
+├── data/                 ← practice data files for lessons 14 & 15
+├── docs/                 ← learning-guide.md (detailed reference)
+├── modules/              ← NumPy, Pandas, Matplotlib demos
+├── mcp/                  ← Model Context Protocol tutorials (7 files)
+├── projects/             ← sentiment-analysis, conda-envs
+├── python-ai-context/    ← AI-focused Python utilities
+├── markdown-basics/      ← Markdown syntax reference
+├── weekly-reports/       ← Chapter 3: Weekly task reports (Weeks 1–6)
 ├── readme.md
-└── sync.ps1          ← quick pull script
+└── sync.ps1              ← quick pull script
 ```
+
+---
 
 ## 📚 Lessons
 
@@ -33,6 +40,32 @@ sample-ai-repository/
 | 13  | `13_mini_projects.py`          | ASCII bot + interactive calculator |
 | 14  | `14_file_io.py`                | Read, write, append files          |
 | 15  | `15_csv_operations.py`         | csv.reader / writer / DictReader   |
+| 16  | `16_ai_context_datatypes.py`   | AI-focused data type usage         |
+| 17  | `17_ai_context_loops.py`       | AI-focused loop patterns           |
+| 18  | `18_ai_context_operators.py`   | AI-focused operator usage          |
+
+## 📦 Modules
+
+| Module     | File                    | Description                                 |
+| ---------- | ----------------------- | ------------------------------------------- |
+| NumPy      | `modules/numpy/`        | Array ops, reshaping, statistics for ML      |
+| Pandas     | `modules/pandas/`       | DataFrame creation, filtering, value counts  |
+| Matplotlib | `modules/matplotlib/`   | Loss & accuracy training visualization plots |
+
+## 🔌 MCP (Model Context Protocol)
+
+7 progressive tutorials in [`mcp/`](./mcp/) — from basics to a real-world example. See the [MCP README](./mcp/README.md).
+
+## 🚀 Projects
+
+| Project              | Path                           | Description                          |
+| -------------------- | ------------------------------ | ------------------------------------ |
+| Sentiment Analysis   | `projects/sentiment-analysis/` | HuggingFace Transformers pipeline    |
+| Conda Environments   | `projects/conda-envs/`         | Example Conda env YAML configs       |
+
+## 📝 Weekly Reports
+
+Detailed weekly task reports for the program in [`weekly-reports/`](./weekly-reports/). Covers 6 weeks — from GenAI foundations to ML deployment.
 
 ## 🗂️ Practice Data (`data/`)
 
@@ -44,7 +77,9 @@ sample-ai-repository/
 | `products.csv`     | 15 products, 10 fields — inventory/search practice     |
 | `transactions.csv` | 20 bank transactions, 7 fields — financial analysis    |
 
-## 🚀 Getting Started
+---
+
+## 🛠️ Getting Started
 
 ```bash
 # Run from the project root
@@ -60,44 +95,36 @@ See [`docs/learning-guide.md`](./docs/learning-guide.md) for full concept explan
 
 ---
 
-[CampuspeLogo](https://campuspe.com/logo1.svg)
+## 🖥️ Virtual Environment Setup
 
-# Campuspe Generative AI Class
+### What is a Virtual Environment?
 
-## Virtual Environment
+An isolated Python environment that lets you:
 
-1. What is Virtual Environment?
-   A isolated Python Enviromen that lets you:
-
-- Install Project spefic packages without affecting other projects
-- Use different packages for different projects
-- Avoid dependency conflicts between projects
-- Project coordination easy
+- Install project-specific packages without affecting other projects
+- Use different package versions for different projects
+- Avoid dependency conflicts
+- Keep project coordination clean
 
 ```
 Project A -> venv_a -> TensorFlow 2.10
 Project B -> venv_b -> TensorFlow 2.12
-
 ```
 
-2. Commands to Run Venv
+### Commands
 
-- Windows
-
-```
+**Windows:**
+```powershell
 cd project-name
-python -m venv <venv-name(replace with actual env name)>
-<venv-name\Scripts\activate>
+python -m venv <env-name>
+<env-name>\Scripts\activate
 deactivate
-
 ```
 
-- Mac and Linux and unix os
-
-```
+**macOS / Linux:**
+```bash
 cd project-name
-python -m venv <venv-name(replace with actual env name)>
-source <venv-name>/Scripts/activate
+python -m venv <env-name>
+source <env-name>/bin/activate
 deactivate
-
 ```
