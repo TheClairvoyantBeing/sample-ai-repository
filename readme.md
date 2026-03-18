@@ -1,20 +1,20 @@
 # 🐍 Generative AI Engineering Program — Repository
 
-A comprehensive repository for the **Generative AI Engineering Program** by [Campuspe](https://campuspe.com). Contains Python lessons, data science modules, MCP tutorials, projects, and weekly task reports.
+A comprehensive repository for the **Generative AI Engineering Program** by [Campuspe](https://campuspe.com). Contains Program Curriculum (Python, Data Science, MCP), data files, project environments, and specialized utilities.
 
 ## 📁 Repository Structure
 
 ```
 sample-ai-repository/
-├── lessons/              ← 18 numbered Python lesson files (start here)
-├── data/                 ← practice data files for lessons 14 & 15
+├── core/                 ← Program Curriculum
+│   ├── python/           ← 18 numbered Python lesson files
+│   ├── data-science/     ← NumPy, Pandas, Matplotlib demos
+│   ├── mcp/              ← Model Context Protocol tutorials
+│   └── markdown/         ← Markdown syntax reference
+├── data/                 ← practice data files for lessons
 ├── docs/                 ← learning-guide.md (detailed reference)
-├── modules/              ← NumPy, Pandas, Matplotlib demos
-├── mcp/                  ← Model Context Protocol tutorials (7 files)
 ├── projects/             ← sentiment-analysis, conda-envs
-├── python-ai-context/    ← AI-focused Python utilities
-├── markdown-basics/      ← Markdown syntax reference
-├── weekly-reports/       ← Chapter 3: Weekly task reports (Weeks 1–6)
+├── utils/                ← AI-focused Python utilities (functions.py)
 ├── readme.md
 └── sync.ps1              ← quick pull script
 ```
@@ -23,38 +23,38 @@ sample-ai-repository/
 
 ## 📚 Lessons
 
-| #   | File                           | Topic                              |
-| --- | ------------------------------ | ---------------------------------- |
-| 01  | `01_hello_world.py`            | Your first program                 |
-| 02  | `02_output.py`                 | print(), f-strings, sep & end      |
-| 03  | `03_variables.py`              | Naming, assigning, type()          |
-| 04  | `04_datatypes.py`              | str, int, float, bool              |
-| 05  | `05_operators.py`              | Arithmetic, comparison, logical    |
-| 06  | `06_user_input.py`             | input() and type conversion        |
-| 07  | `07_conditional_statements.py` | if / elif / else / ternary         |
-| 08  | `08_looping_statements.py`     | while, for, break, continue        |
-| 09  | `09_functions.py`              | def, return, \*args, \*\*kwargs    |
-| 10  | `10_data_structures.py`        | List, Tuple, Dictionary, Set       |
-| 11  | `11_exception_handling.py`     | try / except / finally / raise     |
-| 12  | `12_modules.py`                | datetime, os, math, random         |
-| 13  | `13_mini_projects.py`          | ASCII bot + interactive calculator |
-| 14  | `14_file_io.py`                | Read, write, append files          |
-| 15  | `15_csv_operations.py`         | csv.reader / writer / DictReader   |
-| 16  | `16_ai_context_datatypes.py`   | AI-focused data type usage         |
-| 17  | `17_ai_context_loops.py`       | AI-focused loop patterns           |
-| 18  | `18_ai_context_operators.py`   | AI-focused operator usage          |
+| #   | File                               | Topic                              |
+| --- | ---------------------------------- | ---------------------------------- |
+| 01  | `core/python/01_hello_world.py`    | Your first program                 |
+| 02  | `core/python/02_output.py`         | print(), f-strings, sep & end      |
+| 03  | `core/python/03_variables.py`      | Naming, assigning, type()          |
+| 04  | `core/python/04_datatypes.py`      | str, int, float, bool              |
+| 05  | `core/python/05_operators.py`      | Arithmetic, comparison, logical    |
+| 06  | `core/python/06_user_input.py`     | input() and type conversion        |
+| 07  | `core/python/07_conditional.py`    | if / elif / else / ternary         |
+| 08  | `core/python/08_looping.py`        | while, for, break, continue        |
+| 09  | `core/python/09_functions.py`      | def, return, *args, **kwargs       |
+| 10  | `core/python/10_structures.py`     | List, Tuple, Dictionary, Set       |
+| 11  | `core/python/11_exceptions.py`     | try / except / finally / raise     |
+| 12  | `core/python/12_modules.py`        | datetime, os, math, random         |
+| 13  | `core/python/13_projects.py`       | ASCII bot + interactive calculator |
+| 14  | `core/python/14_file_io.py`        | Read, write, append files          |
+| 15  | `core/python/15_csv_ops.py`        | csv.reader / writer / DictReader   |
+| 16  | `core/python/16_ai_datatypes.py`   | AI-focused data type usage         |
+| 17  | `core/python/17_ai_loops.py`       | AI-focused loop patterns           |
+| 18  | `core/python/18_ai_operators.py`   | AI-focused operator usage          |
 
 ## 📦 Modules
 
-| Module     | File                    | Description                                 |
-| ---------- | ----------------------- | ------------------------------------------- |
-| NumPy      | `modules/numpy/`        | Array ops, reshaping, statistics for ML      |
-| Pandas     | `modules/pandas/`       | DataFrame creation, filtering, value counts  |
-| Matplotlib | `modules/matplotlib/`   | Loss & accuracy training visualization plots |
+| Module     | Path                           | Description                                 |
+| ---------- | ------------------------------ | ------------------------------------------- |
+| NumPy      | `core/data-science/numpy/`     | Array ops, reshaping, statistics for ML      |
+| Pandas     | `core/data-science/pandas/`    | DataFrame creation, filtering, value counts  |
+| Matplotlib | `core/data-science/matplotlib/`| Loss & accuracy training visualization plots |
 
 ## 🔌 MCP (Model Context Protocol)
 
-7 progressive tutorials in [`mcp/`](./mcp/) — from basics to a real-world example. See the [MCP README](./mcp/README.md).
+7 progressive tutorials in [`core/mcp/`](./core/mcp/) — from basics to a real-world example. See the [MCP README](./core/mcp/README.md).
 
 ## 🚀 Projects
 
@@ -63,9 +63,6 @@ sample-ai-repository/
 | Sentiment Analysis   | `projects/sentiment-analysis/` | HuggingFace Transformers pipeline    |
 | Conda Environments   | `projects/conda-envs/`         | Example Conda env YAML configs       |
 
-## 📝 Weekly Reports
-
-Detailed weekly task reports for the program in [`weekly-reports/`](./weekly-reports/). Covers 6 weeks — from GenAI foundations to ML deployment.
 
 ## 🗂️ Practice Data (`data/`)
 

@@ -9,7 +9,7 @@ param (
 )
 
 $ORIGIN   = "https://github.com/TheClairvoyantBeing/sample-ai-repository.git"
-$UPSTREAM = "https://github.com/YOUR_UPSTREAM_ORG/sample-ai-repository.git"  # <-- change this if needed
+$UPSTREAM = "https://github.com/jacobdennisp/sample-ai-repository.git"
 $BRANCH   = "main"
 
 Write-Host ""
