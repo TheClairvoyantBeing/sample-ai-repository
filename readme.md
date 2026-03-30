@@ -14,6 +14,7 @@ This repository has been structured sequentially. Progress from `01` to `06`.
 6. **`06_projects_and_utils/`**: Applied examples, `conda` environment setups, and NLP sentiment-analysis systems.
 7. **`07_flask_api_project/`**: Serving your Python AI application to real users over HTTP as a networked API!
 8. **`08_machine_learning_modules/`**: Connecting standard algorithms via `sklearn` and interacting with external API endpoints.
+9. **`09_chat_web_app/`**: A fully decoupled front-end GUI built with vanilla Web Technologies to interface with endpoints.
 
 ---
 
