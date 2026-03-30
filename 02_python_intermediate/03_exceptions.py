@@ -42,7 +42,7 @@ else:
 # Use for cleanup tasks: closing files, DB connections, etc.
 print("\n── finally ─────────────────────────")
 try:
-    f = open("data/test.txt", "r")
+    f = open("../data/test.txt", "r")
     content = f.read()
     print(content[:50])         # print first 50 chars
 except FileNotFoundError:

@@ -8,7 +8,7 @@
 import csv
 import os
 
-DATA_DIR = "../data"   # data/ lives one level up from lessons/
+DATA_DIR = "../data"   # data/ lives one level up from 02_python_intermediate/
 
 # ── 1. Write a CSV file ──────────────────────────────────────
 # csv.writer handles commas inside values, quoting, etc. automatically.

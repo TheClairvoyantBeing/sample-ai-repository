@@ -29,7 +29,7 @@ print(f"Current directory: {os.getcwd()}")
 print(f"Files here:        {os.listdir('.')[:5]}...")  # first 5 entries
 
 path_exists = os.path.exists("../data/test.txt")
-print(f"data/test.txt exists: {path_exists}")
+print(f"../data/test.txt exists: {path_exists}")
 
 # ── math — mathematical functions ───────────────────────────
 print("\n── math ────────────────────────────")

@@ -6,7 +6,7 @@
 
 import os
 
-DATA_DIR = "../data"   # data/ lives one level up from lessons/
+DATA_DIR = "../data"   # data/ lives one level up from 02_python_intermediate/
 
 # ── 1. Write a file ──────────────────────────────────────────
 # Mode "w" creates the file (or overwrites it if it already exists).
@@ -53,7 +53,7 @@ except FileNotFoundError:
 # ── 6. Always handle file errors ─────────────────────────────
 print("\n── Error handling ──────────────────")
 try:
-    with open("data/ghost.txt", "r") as file:
+    with open(os.path.join(DATA_DIR, "ghost.txt"), "r") as file:
         print(file.read())
 except FileNotFoundError:
     print("❌ File not found.")

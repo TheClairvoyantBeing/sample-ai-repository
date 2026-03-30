@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "version": "1.2.0",
+    "description": "Simulation of multivariate server farm anomalies",
+    "timestamp": "2026-03-30T10:00:00Z"
+  },
+  "nodes": [
+    {
+      "id": "server-alpha",
+      "status": "online",
+      "metrics": {
+        "cpu_utilization": [45.1, 48.0, 52.3, 99.9, 94.0],
+        "memory_mb": 16000,
+        "anomalous_events": [
+           {"time": "09:45:00Z", "error_code": "E002", "severity": "HIGH"}
+        ]
+      }
+    },
+    {
+      "id": "server-beta",
+      "status": "offline",
+      "metrics": {
+        "cpu_utilization": [10.2, 0.0, 0.0, 0.0, 0.0],
+        "memory_mb": 8000,
+        "anomalous_events": [
+           {"time": "09:30:00Z", "error_code": "FATAL", "severity": "CRITICAL"}
+        ]
+      }
+    }
+  ]
+}
