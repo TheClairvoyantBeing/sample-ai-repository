@@ -12,4 +12,10 @@ def create_app(config_name='default'):
 
     CORS(app)
 
+    from app.controllers.api_controller import api_bp
+    from app.controllers.main_controller import main_bp
+    
+    app.register_blueprint(api_bp, url_prefix='/api')
+    app.register_blueprint(main_bp)
+
     return app

@@ -28,7 +28,7 @@ def validate_email(email):
 
 def sanitize_input(text):
     text = re.sub(r'<[^>]+>','',text)
-    text = ' '.json(text.split())
+    text = ' '.join(text.split())
     return text.strip()
 
 def format_response(data,status='success',message=None):
@@ -40,4 +40,4 @@ def format_response(data,status='success',message=None):
     if message:
         response['message'] = message
 
-    return message
+    return response

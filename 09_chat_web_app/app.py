@@ -20,8 +20,8 @@ if __name__ == '__main__':
         POST /api/chat
         GET /api/conversations
         GET /api/conversations/<id>
-        DEL /api/converstaions/<id>
-        DEL /api/converstaions
+        DEL /api/conversations/<id>
+        DEL /api/conversations
         GET /api/model/info
         =============================================
     """)

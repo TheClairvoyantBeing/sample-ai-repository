@@ -110,7 +110,7 @@ def send_message():
         db.session.commit()
 
         return jsonify({
-            'status': True,
+            'success': True,
             'data': {
                 'response': ai_response,
                 'conversation_id': conversation.id,

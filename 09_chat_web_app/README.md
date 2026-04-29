@@ -1,6 +1,6 @@
 # 🌐 09 - Chat Web App (Front-End)
 
-Welcome to the frontend iteration of the Generative AI curriculum! This directory contains a fully built, raw HTML/CSS/JS interface connecting directly to backends or LLMs to simulate chatbots.
+Welcome to the chat application iteration of the Generative AI curriculum! This directory contains a full-stack application featuring a Flask API backend with SQLAlchemy database integration and a responsive HTML/CSS/JS frontend.
 
 ## 📖 Topics Covered
 1. **`index.html`**: The structure and frame layout for an AI chat client.

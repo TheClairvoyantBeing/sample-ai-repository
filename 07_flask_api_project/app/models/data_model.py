@@ -56,4 +56,4 @@ class DataModel:
         }
 
     def get_data(self,key):
-        return self.data_store.get[key]
+        return self.data_store.get(key)

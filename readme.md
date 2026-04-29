@@ -29,6 +29,12 @@ This repository has been structured sequentially. Progress from `01` to `06`.
 
 Follow the numerical directories in order. It is highly recommended to set up a virtual environment before diving into modules starting from level 04.
 
+### 🔑 Environment Configuration
+Modules 07, 08, and 09 require API keys and server configurations. 
+1. Copy `.env.example` to `.env` in the root or module directory.
+2. Fill in your `GROQ_API_KEY` (get one from [console.groq.com](https://console.groq.com/)).
+3. Adjust other variables as needed.
+
 **To run your first lesson:**
 ```bash
 python 01_python_basics/01_hello_world.py
