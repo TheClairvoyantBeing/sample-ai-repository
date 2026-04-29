@@ -4,7 +4,7 @@ Welcome to the **Generative AI Engineering Program** sample repository. This pro
 
 ## 📚 Course Curriculum Layout
 
-This repository has been structured sequentially. Progress from `01` to `06`.
+This repository has been structured sequentially. Progress from `01` to `09`.
 
 1. **`01_python_basics/`**: Entry-level syntax, logic, and base semantics (Hello World, Loops, Conditionals).
 2. **`02_python_intermediate/`**: Data structures, functions, modules, error handling, and file inputs/outputs.
@@ -38,6 +38,12 @@ Modules 07, 08, and 09 require API keys and server configurations.
 **To run your first lesson:**
 ```bash
 python 01_python_basics/01_hello_world.py
+```
+
+### 📦 Installing Dependencies
+A master `requirements.txt` file is provided at the root of the repository, which automatically points to all necessary sub-module requirements. You can install everything at once using:
+```bash
+pip install -r requirements.txt
 ```
 
 ### Virtual Environments (Optional but Recommended)

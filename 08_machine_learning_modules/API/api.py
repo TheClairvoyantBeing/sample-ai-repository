@@ -18,6 +18,7 @@ url = req_url
 # print(response.text)
 
 print("\n3. POST Request")
+# Example POST request demonstrating how to send JSON payloads to an endpoint
 new_post = {
     "userId": 1,
     "title": "Testing AI Placeholder Response",

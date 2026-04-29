@@ -1,0 +1,7 @@
+-r 04_data_science_fundamentals/01_numpy/requirements.txt
+-r 04_data_science_fundamentals/02_pandas/requirements.txt
+-r 04_data_science_fundamentals/03_matplotlib/requirements.txt
+-r 06_projects_and_utils/02_sentiment_analysis/requirements.txt
+-r 07_flask_api_project/requirements.txt
+-r 08_machine_learning_modules/API/requirements.txt
+-r 09_chat_web_app/requirements.txt
